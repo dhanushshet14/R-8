@@ -1,0 +1,118 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef2f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.container {
+  max-width: 720px;
+  margin: 48px auto;
+  background: linear-gradient(135deg, #ffffff, #fdfdfd);
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #0f172a;
+}
+
+/* Form Elements */
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  box-sizing: border-box;
+}
+
+/* Submit Button */
+form button {
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #6d28d9;
+}
+
+/* Filter Buttons */
+.filters button {
+  margin-right: 10px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e2e8f0;
+  color: #1e293b;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.filters button:hover {
+  background-color: #cbd5e1;
+  transform: scale(1.05);
+}
+
+/* Task Item */
+.task-item {
+  background-color: #f8fafc;
+  border: 1px solid #dbeafe;
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Completed Task */
+.task-item.completed {
+  background-color: #d1fae5;
+  text-decoration: line-through;
+}
+
+/* Task Info */
+.task-info h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.task-info p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #475569;
+}
+
+/* Task Button */
+.task-item button {
+  background-color: #14b8a6;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.task-item button:hover {
+  background-color: #0d9488;
+  transform: scale(1.05);
+}

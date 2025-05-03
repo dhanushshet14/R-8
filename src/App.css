@@ -1,0 +1,62 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  text-align: center;
+  background: linear-gradient(to right, #f0f4f8, #e8f0fe);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 12px;
+}
+
+/* Logo Styling */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  will-change: transform, filter;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2.5em #00b4d8aa);
+  transform: scale(1.1);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2.5em #90e0efaa);
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Logo Animation */
+@keyframes logo-wobble {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-wobble infinite 6s ease-in-out;
+  }
+}
+
+/* Card Component */
+.card {
+  padding: 2.5em;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+}
+
+/* Docs Text */
+.read-the-docs {
+  color: #555;
+  font-style: italic;
+  margin-top: 1rem;
+}
